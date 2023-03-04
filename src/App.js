@@ -3,6 +3,7 @@ import './App.scss';
 import Quiz from './components/Quiz';
 
 const initialState = {
+	currentQuestion: 1,
 	question: 'Which of the following is not a Javascript framework?',
 	options: ['Node', 'Vue', 'Flutter'],
 };
