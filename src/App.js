@@ -4,6 +4,7 @@ import Quiz from './components/Quiz';
 
 const initialState = {
 	question: 'Which of the following is not a Javascript framework?',
+	options: ['Node', 'Vue', 'Flutter'],
 };
 
 const App = (context) => {
