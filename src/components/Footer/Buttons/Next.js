@@ -10,6 +10,7 @@ const Next = (context) => {
 		<Button { ...{
 			variant: 'contained',
 			size: 'large',
+			disabled: !userAnswer,
 			onClick: () => setState((state) => ({
 				...state,
 				currentQuestion: currentQuestion + 1,
@@ -18,6 +19,7 @@ const Next = (context) => {
 				score: userAnswer === quizData[currentQuestion - 1].answer
 					? score + 1
 					: score,
+				userAnswer: '',
 			})),
 		} }
 		>
