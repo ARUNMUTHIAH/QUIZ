@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Quiz from './components/Quiz';
+import Display from './components/Display';
 
 const initialState = {
 	currentQuestion: 1,
@@ -8,6 +8,7 @@ const initialState = {
 	options: ['Node', 'Vue', 'Flutter'],
 	userAnswer: null,
 	score: 0,
+	isEnd: false,
 };
 
 const App = (context) => {
@@ -15,7 +16,7 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<Quiz { ...extendedContext }/>
+		<Display { ...extendedContext }/>
 	</div>;
 };
 
