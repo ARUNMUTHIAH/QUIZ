@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import FinalScreen from './Display/FinalScreen';
-import Quiz from './Display/Quiz';
+import FinalScreen from './FinalScreen';
+import Quiz from './Quiz';
 
 const Display = (context) => {
 	const { state: { isEnd }} = context;

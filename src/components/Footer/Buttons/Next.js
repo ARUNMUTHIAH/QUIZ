@@ -1,14 +1,13 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
+import QuizManager from '../../../services/QuizManager';
 
 const Next = (context) => {
-	const { state: { currentQuestion, userAnswer, score },
+	const { state: { currentQuestion, userAnswer },
 		setState, config: { quizData }} = context;
 
 	return (
-		<Button { ...{
-			variant: 'contained',
+		<Button { ...{ variant: 'contained',
 			size: 'large',
 			disabled: !userAnswer,
 			onClick: () => setState((state) => ({
@@ -16,12 +15,9 @@ const Next = (context) => {
 				currentQuestion: currentQuestion + 1,
 				question: quizData[currentQuestion].question,
 				options: quizData[currentQuestion].options,
-				score: userAnswer === quizData[currentQuestion - 1].answer
-					? score + 1
-					: score,
+				score: QuizManager.updateScore(context),
 				userAnswer: '',
-			})),
-		} }
+			})) } }
 		>
 			NEXT
 		</Button>);

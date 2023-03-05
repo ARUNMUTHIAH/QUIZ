@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from '@mui/material';
+import QuizManager from '../../../services/QuizManager';
 
 const Finish = (context) => {
-	const { setState, state: { userAnswer, currentQuestion, score },
-		config: { quizData }} = context;
+	const { setState } = context;
 
 	return (
 		<Button { ...{ variant: 'contained',
@@ -11,9 +11,7 @@ const Finish = (context) => {
 			onClick: () => setState((state) => ({
 				...state,
 				isEnd: true,
-				score: userAnswer === quizData[currentQuestion - 1].answer
-					? score + 1
-					: score,
+				score: QuizManager.updateScore(context),
 			}))		} }
 		>FINISH</Button>);
 };
