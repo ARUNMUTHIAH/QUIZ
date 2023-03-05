@@ -6,6 +6,8 @@ const initialState = {
 	currentQuestion: 1,
 	question: 'Which of the following is not a Javascript framework?',
 	options: ['Node', 'Vue', 'Flutter'],
+	userAnswer: null,
+	score: 0,
 };
 
 const App = (context) => {
