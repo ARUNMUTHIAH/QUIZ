@@ -8,7 +8,6 @@ const initialState = {
 	options: ['Node', 'Vue', 'Flutter'],
 	userAnswer: null,
 	score: 0,
-	isEnd: false,
 };
 
 const App = (context) => {

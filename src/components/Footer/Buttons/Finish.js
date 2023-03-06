@@ -4,14 +4,15 @@ import QuizManager from '../../../services/QuizManager';
 import DoneAllTwoToneIcon from '@mui/icons-material/DoneAllTwoTone';
 
 const Finish = (context) => {
-	const { setState } = context;
+	const { setState, state: { userAnswer, currentQuestion }} = context;
 
 	return (
 		<Button { ...{ variant: 'contained',
 			size: 'large',
+			disabled: !userAnswer,
 			onClick: () => setState((state) => ({
 				...state,
-				isEnd: true,
+				currentQuestion: currentQuestion + 1,
 				score: QuizManager.updateScore(context),
 			}))		} }
 		><DoneAllTwoToneIcon/></Button>);

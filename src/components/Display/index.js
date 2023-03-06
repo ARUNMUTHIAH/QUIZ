@@ -4,11 +4,11 @@ import FinalScreen from './FinalScreen';
 import Quiz from './Quiz';
 
 const Display = (context) => {
-	const { state: { isEnd }} = context;
+	const { state: { currentQuestion }, config: { quizData }} = context;
 
 	return (
 		<Box>
-			{isEnd
+			{quizData.length === currentQuestion - 1
 				? <FinalScreen { ...context }/>
 				: <Quiz { ...context }/>}
 		</Box>);
