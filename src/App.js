@@ -5,6 +5,7 @@ import UserAction from './components/UserAction';
 const initialState = {
 	currentQuestion: 0,
 	userAnswer: null,
+	questionInput: '',
 	score: 0,
 	user: false,
 };
