@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../../../services/QuizManager';
+import ForwardIcon from '@mui/icons-material/Forward';
 
 const Next = (context) => {
 	const { state: { currentQuestion, userAnswer },
@@ -19,7 +20,7 @@ const Next = (context) => {
 				userAnswer: '',
 			})) } }
 		>
-			NEXT
+			<ForwardIcon/>
 		</Button>);
 };
 

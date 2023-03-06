@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../../../services/QuizManager';
+import DoneAllTwoToneIcon from '@mui/icons-material/DoneAllTwoTone';
 
 const Finish = (context) => {
 	const { setState } = context;
@@ -13,7 +14,7 @@ const Finish = (context) => {
 				isEnd: true,
 				score: QuizManager.updateScore(context),
 			}))		} }
-		>FINISH</Button>);
+		><DoneAllTwoToneIcon/></Button>);
 };
 
 export default Finish;
