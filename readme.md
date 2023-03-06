@@ -2,7 +2,7 @@
 
 	Quiz.
 
-# REQUIREMENT :
+# REQUIREMENT (User INfo):
 
  * Display a question and options
 
@@ -11,9 +11,6 @@
  * Place the finish button
 
  * Display final score and answers
-
-
-
 
 
 
@@ -44,3 +41,25 @@
 
 
  This application is developed under the part of upskill training.
+
+
+# REQUIREMENT (Owner Info):
+
+ * Add three input boxes ,
+
+ * Dispaly a option add button,
+
+ * Display a common add button,
+
+
+ # Steps to input boxes:
+
+ * Add three flag in state , one is question, one is answer, another one is for options,
+ * The structure of the question and answer are a string and the options is an array,
+ * Create three components to display question, options and answer, when the user type any content in the text box, then the three flags will be updated,
+
+
+ * Create a component to dispaly a option add button , when the user types a three options it will enabled orElse it will be in disabled state,
+
+
+ * Create a component to display a common add button , when we click the add button the value will be added to the userInfo,
