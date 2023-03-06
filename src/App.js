@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Display from './components/Display';
+import UserAction from './components/UserAction';
 
 const initialState = {
 	currentQuestion: 0,
@@ -14,7 +14,7 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<Display { ...extendedContext }/>
+		<UserAction { ...extendedContext }/>
 	</div>;
 };
 
