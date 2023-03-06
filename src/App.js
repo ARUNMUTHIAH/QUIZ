@@ -3,11 +3,10 @@ import './App.scss';
 import Display from './components/Display';
 
 const initialState = {
-	currentQuestion: 1,
-	question: 'Which of the following is not a Javascript framework?',
-	options: ['Node', 'Vue', 'Flutter'],
+	currentQuestion: 0,
 	userAnswer: null,
 	score: 0,
+	user: false,
 };
 
 const App = (context) => {

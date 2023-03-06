@@ -8,7 +8,7 @@ const Display = (context) => {
 
 	return (
 		<Box>
-			{quizData.length === currentQuestion - 1
+			{quizData.length === currentQuestion
 				? <FinalScreen { ...context }/>
 				: <Quiz { ...context }/>}
 		</Box>);

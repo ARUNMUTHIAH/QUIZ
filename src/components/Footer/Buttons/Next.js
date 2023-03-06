@@ -5,7 +5,7 @@ import ForwardIcon from '@mui/icons-material/Forward';
 
 const Next = (context) => {
 	const { state: { currentQuestion, userAnswer },
-		setState, config: { quizData }} = context;
+		setState } = context;
 
 	return (
 		<Button { ...{ variant: 'contained',
@@ -14,8 +14,6 @@ const Next = (context) => {
 			onClick: () => setState((state) => ({
 				...state,
 				currentQuestion: currentQuestion + 1,
-				question: quizData[currentQuestion].question,
-				options: quizData[currentQuestion].options,
 				score: QuizManager.updateScore(context),
 				userAnswer: '',
 			})) } }
