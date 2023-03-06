@@ -1,53 +1,46 @@
 # Project Name
 
-	Project description.
+	Quiz.
 
-## Keys
+# REQUIREMENT :
 
-* A short list of things to understand the package, better.
+ * Display a question and options
 
-## Notes
+ * Place the next button
 
-* Though pnpm is the preferred package manager, package-lock is still kept to widen support.
+ * Place the finish button
 
-## Usage
-### Setup
-#### Linux / Mac
-```sh
-$ git clone https://github.com/Laufire/react-starter.git project-name
-$ cd project-name
-$ sh ./adopt.sh
-$ sh ./setup.sh
-```
+ * Display final score and answers
 
-#### Windows
-```sh
-C:\> git clone https://github.com/Laufire/react-starter.git project-name
-C:\> cd project-name
-C:\> .\adopt.bat
-```
 
-### Development
-#### Linux, Windows & Mac
-```
-$ # Run all tests.
-$  pnpm run test-dev
 
-$ # Run a particular test (matching the given pattern).
-$ pnpm run test-dev -- --testPathPattern "target"
 
-$ # Run all tests with coverage.
-$  pnpm run test-ci
-```
 
-## ToDo
 
-* Have branches to allow for multiple templates.
-	* One for a clean one to start new projects.
-	* One with basic examples.
+ # Steps For Quiz App:
 
-* Audit the packages. It's not done, yet. Due to poor understanding of the dependencies.
+ * Add a data to config, the structure will be array of objects, question and answer are string, and the options is array of strings,
+ * Add two keys to the state, one is question and another one is options, and initially added the value to it,
+ * Create a component to display a question,
+ * Create a component to display the options array using map,
+ * Add a userAnswer key in state , while user click any options the userAnswer key will be updated,
 
-* Try moving away from create-react-app, as it introduces a lot of constraints, including reconfiguring jest.
 
-* Think of replacing npm with pnpm.
+
+ * Create a component to display next button , initially the next button is in disabled state, when the user click any options it will be enabled,
+ * Add a currentQuestion key in state , the value will be initially zero, when the user click the next button the currentQuestion will be increased,
+ * while the currentQuestion is updated, the next question and the options will also be updated,
+ * Add a score key to the state, while the userAnswer and the exact answer when matches then the score will increase,
+
+
+
+ * Add a component to display the finish button,initially the finish button is in disabled state, when the user click any options it will be enabled, while the userAnswer and the exact answer when matches then the score will increase in this too,
+ * while the user click the finish button it will display the final page,
+
+
+
+ * The final page contains the total score and the overall answers,
+
+
+
+ This application is developed under the part of upskill training.
