@@ -2,7 +2,7 @@
 const config = {
 	quizData: [
 		{
-			question: 'Which of the following is not a Javascript framework?',
+			question: 'Which one of the following is not a Javascript framework?',
 			options: ['Node', 'Vue', 'Flutter'],
 			answer: 'Flutter',
 		},
