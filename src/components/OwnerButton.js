@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const UserButton = (context) => {
+const OwnerButton = (context) => {
 	const { setState } = context;
 
 	return (
@@ -11,10 +11,10 @@ const UserButton = (context) => {
 			} }
 			onClick={ () => setState((state) => ({
 				...state,
-				user: true,
-				owner: false,
+				owner: true,
+				user: false,
 			})) }
-		>USER</Button>);
+		>OWNER</Button>);
 };
 
-export default UserButton;
+export default OwnerButton;

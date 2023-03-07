@@ -2,15 +2,16 @@ import React from 'react';
 import { TextField } from '@mui/material';
 
 const QuestionInput = (context) => {
-	const { setState } = context;
+	const { setState, state } = context;
+	const { Input } = state;
 
 	return (
 		<TextField { ...{
 			placeholder: 'Question',
-			onChange: ({ target: { value }}) => setState((state) => ({
+			onChange: ({ target: { value }}) => setState({
 				...state,
-				questionInput: value,
-			})),
+				Input: { ...Input, question: value },
+			}),
 		} }
 		/>);
 };
