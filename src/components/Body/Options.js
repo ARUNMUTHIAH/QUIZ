@@ -2,22 +2,21 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 const Options = (context) => {
-	const { state: { userAnswer, currentQuestion },
-		config: { quizData },
+	const { state: { userAnswer, userInfo, currentQuestion }, state,
 		setState } = context;
 
 	return (
 		<Box>
-			{quizData[currentQuestion].options.map((option, key) =>
+			{userInfo[currentQuestion].options.map((option, key) =>
 				<Box
 					key={ key }
 					{ ...{ className: userAnswer === option
 						? 'correctOption'
 						: 'option',
-					onClick: () => setState((state) => ({
+					onClick: () => setState({
 						...state,
 						userAnswer: option,
-					})) } }
+					}) } }
 				>{option}</Box>)}
 		</Box>);
 };

@@ -4,12 +4,12 @@ import Options from '../Body/Options';
 import QuestionsCount from './QuestionsCount';
 
 const Questions = (context) => {
-	const { state: { currentQuestion }, config: { quizData }} = context;
+	const { state: { userInfo, currentQuestion }} = context;
 
 	return (
 		<Box className="outerBorder">
 			<InputLabel class="question">
-				{quizData[currentQuestion].question}</InputLabel>
+				{userInfo[currentQuestion].question}</InputLabel>
 			<QuestionsCount { ...context }/>
 			<Options { ...context }/>
 		</Box>);
