@@ -6,7 +6,7 @@ const QuestionsCount = (context) => {
 
 	return (
 		<Box className="question">
-			Questions {currentQuestion}  out of {userInfo.length}
+			Questions {currentQuestion + 1}  out of {userInfo.length}
 		</Box>);
 };
 
