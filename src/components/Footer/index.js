@@ -4,10 +4,10 @@ import Finish from './Buttons/Finish';
 import Next from './Buttons/Next';
 
 const Action = (context) => {
-	const { config: { quizData }, state: { currentQuestion }} = context;
+	const { state: { currentQuestion, userInfo }} = context;
 
 	return <Box className="next">
-		{quizData.length === currentQuestion
+		{userInfo.length === currentQuestion
 			? <Finish { ...context }/>
 			: <Next { ...context }/>}
 	</Box>;

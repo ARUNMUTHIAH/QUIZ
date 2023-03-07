@@ -1,8 +1,7 @@
 const updateScore = (context) => {
-	const { state: { score, currentQuestion, userAnswer },
-		config: { quizData }} = context;
+	const { state: { score, currentQuestion, userAnswer, userInfo }} = context;
 
-	return userAnswer === quizData[currentQuestion].answer
+	return userAnswer === userInfo[currentQuestion].answer
 		? score + 1
 		: score;
 };

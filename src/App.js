@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { React, useState } from 'react';
 import './App.scss';
 import OwnerAction from './components/OwnerAction';
@@ -10,9 +9,8 @@ const initialState = (context) => {
 	return {
 		currentQuestion: 0,
 		userAnswer: null,
-		userInfo: peek([...quizData]),
+		userInfo: quizData,
 		Input: { question: '', options: [], answer: '' },
-		ownerInfo: [{ question: '', options: [], answer: '' }],
 		score: 0,
 		user: false,
 		owner: false,
