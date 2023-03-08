@@ -1,8 +1,6 @@
 .App {
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-right: 10%;
 }
 
@@ -44,3 +42,53 @@
 	background-color: rgb(128, 204, 230);
 }
 
+.header {
+	display: flex;
+	flex-direction: row;
+}
+
+.icon {
+	position: relative;
+	bottom: 40%;
+}
+
+.textBox {
+	margin-left: 5%;
+	border: 2px solid black;
+	width: 15%;
+	height: 55px;
+	border-radius: 10px;
+}
+
+.input {
+	width: 80%;
+}
+
+.searchBar {
+	position: relative;
+	bottom: 80%;
+	left: 40%;
+}
+
+.tabs {
+	margin-left: 10%
+}
+
+.logIn {
+	position: relative;
+	left: 30%;
+}
+
+.signUp {
+	position: relative;
+	left: 32%;
+}
+
+.menuBar {
+	position: relative;
+	left: 34%;
+	height: 2%;
+	border: 3px solid black;
+	border-radius: 15%;
+	background-color: wheat
+}
