@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import './App.scss';
 import Header from './components/Quiz/Header';
+import MainScreen from './components/Category';
 
 const initialState = (context) => {
 	const { config: { quizData }} = context;
@@ -22,6 +23,7 @@ const App = (context) => {
 
 	return <div className="App">
 		<Header { ...extendedContext }/>
+		<MainScreen { ...extendedContext }/>
 	</div>;
 };
 
