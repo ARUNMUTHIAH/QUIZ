@@ -1,7 +1,6 @@
 import { React, useState } from 'react';
 import './App.scss';
-import OwnerAction from './components/OwnerAction';
-import UserAction from './components/UserAction';
+import MainScreen from './components/Category';
 
 const initialState = (context) => {
 	const { config: { quizData }} = context;
@@ -22,8 +21,7 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<UserAction { ...extendedContext }/>
-		<OwnerAction { ...extendedContext }/>
+		<MainScreen { ...extendedContext }/>
 	</div>;
 };
 

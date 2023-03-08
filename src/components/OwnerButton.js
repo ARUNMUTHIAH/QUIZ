@@ -8,6 +8,7 @@ const OwnerButton = (context) => {
 		<Button
 			{ ...{
 				variant: 'contained',
+				class: 'ownerButton',
 			} }
 			onClick={ () => setState((state) => ({
 				...state,

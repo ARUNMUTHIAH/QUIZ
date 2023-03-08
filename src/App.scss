@@ -1,9 +1,29 @@
 .App {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	margin-top: 5%;
 	margin-right: 10%;
+}
+
+.secondScreen {
+	background-image: url('https://bullsmedia.de/wp-content/uploads/2021/07/quzi-1024x536.jpg');
+	background-repeat: no-repeat;
+	margin-top: -10%;
+	margin-left: 8%;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+}
+
+.userButton {
+	margin-top: 20%;
+}
+
+.ownerButton {
+	margin-top: 20%;
 }
 
 .outerBorder {
@@ -37,10 +57,56 @@
 	border: 3px solid;
 	width: 35%;
 	margin-left: 30%;
-	margin-top: 5%;
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: x-large;
 	background-color: rgb(128, 204, 230);
 }
 
+.categories {
+	margin-top: 10%;
+	border: 1px solid rgb(37, 37, 78);
+	height: 280px;
+	width: 18%;
+	margin-left: 13%;
+	border-radius: 5%;
+	background-color: rgba(229, 138, 138, 0.801);
+}
+
+.play {
+	position: relative;
+	top: -45%;
+}
+
+.categoryImage {
+	position: relative;
+	border-radius: 80%;
+}
+
+.categoryName {
+	position: relative;
+	top: -110%;
+	font-size: xx-large;
+	text-shadow: 2px 2px #FF0000;
+	font-weight: bold;
+}
+
+.categoryLogo {
+	position: relative;
+	top: -122%;
+	border-radius: 50%;
+}
+
+.label {
+	position: relative;
+	top:-92%;
+	font-weight: bold;
+	border: 2px solid #ffffff;
+	border-radius: 0 0 9px 9px;
+	padding: 3px 12px;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0 5px 2px #0000004d;
+	width: 90%;
+	background: rgb(41, 161, 216);
+}

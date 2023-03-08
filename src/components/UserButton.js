@@ -7,7 +7,8 @@ const UserButton = (context) => {
 	return (
 		<Button
 			{ ...{
-				variant: 'contained',
+				variant: 'outlined',
+				class: 'userButton',
 			} }
 			onClick={ () => setState((state) => ({
 				...state,

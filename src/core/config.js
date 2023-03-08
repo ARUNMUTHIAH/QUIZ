@@ -27,6 +27,32 @@ const config = {
 			answer: 'Nine',
 		},
 	],
+	categories: [
+		{
+			name: 'CRICKET',
+			image: '/img/cricket.png',
+		},
+		{
+			name: 'FUNNY',
+			image: '/img/funny.png',
+		},
+		{
+			name: 'MATHS',
+			image: '/img/maths.png',
+		},
+		{
+			name: 'GK',
+			image: '/img/gk.png',
+		},
+		{
+			name: 'JAVASCRIPT',
+			image: '/img/js.png',
+		},
+		{
+			name: 'FOOD',
+			image: '/img/food.png',
+		},
+	],
 };
 
 export default config;
