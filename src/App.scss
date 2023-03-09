@@ -64,6 +64,92 @@
 	background-color: rgb(128, 204, 230);
 }
 
+.frontScreen {
+	display: flex;
+	background-image: url(https://ak.picdn.net/shutterstock/videos/1020525820/thumb/1.jpg);
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.starter {
+	margin-top: 17%;
+	margin-left: 33%;
+	font-size: 6em;
+	color: rgb(224, 11, 175);
+	text-shadow: 0 0 10px #000101, 0 0 10px #000505, 0 0 10px #000101;
+	font-family:'Gill Sans';
+}
+
+.quiz {
+	position: relative;
+	top: 48%;
+	right: 29%;
+	width: 20%;
+	height: 13%;
+	font-family: 'Gill Sans';
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 6em;
+	-webkit-text-stroke-width: 2px;
+	color: rgb(37, 170, 163);
+	text-shadow: 0 0 10px #d40ccd, 0 0 10px #d40ccd;
+	border: 6px solid rgb(50, 45, 43);
+	border-radius: 20px;
+}
+
+.action {
+	justify-content: center;
+	background-image: url(https://cutewallpaper.org/25/animated-gradient-wallpaper/gradient-22f23-background-fd951-10-33649-by-8290b-tutku-26245-tetik-5f647-on-df117-dribbble.gif);
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.actionLabel {
+	margin-top: 15%;
+	margin-left: 7%;
+	font-size: 5em;
+	color: rgb(236, 47, 170);
+	text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+	font-family:'Gill Sans';
+}
+
+.userButton {
+	position: relative;
+	margin-top: -4%;
+	right: -10%;
+	height: 7%;
+	width: 16%;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 3em;
+	color: black;
+	background: linear-gradient(90deg, #0162c8, #55e7fc);
+	border:2px solid rgb(18, 2, 2);
+	border-radius: 40px;
+}
+
+.ownerButton {
+	position: relative;
+	margin-top: -3%;
+	margin-left: 80%;
+	height: 7%;
+	width: 18%;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 3em;
+	color: black;
+	background: linear-gradient(90deg, #0162c8, #55e7fc);
+	border: 2px solid rgb(18, 2, 2);
+	border-radius: 40px;
+}
+
+
 .header {
 	display: flex;
 	flex-direction: row;

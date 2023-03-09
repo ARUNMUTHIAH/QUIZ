@@ -1,21 +1,18 @@
-import { Button } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
 
 const OwnerButton = (context) => {
 	const { setState } = context;
 
 	return (
-		<Button
-			{ ...{
-				variant: 'contained',
-				class: 'ownerButton',
-			} }
+		<Box
+			className="ownerButton"
 			onClick={ () => setState((state) => ({
 				...state,
 				owner: true,
 				user: false,
 			})) }
-		>OWNER</Button>);
+		>CREATE</Box>);
 };
 
 export default OwnerButton;

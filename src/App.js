@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import './App.scss';
 import Header from './components/Quiz/Header';
 import MainScreen from './components/Category';
+import WelcomePage from './components/Theme';
 
 const initialState = (context) => {
 	const { config: { quizData }} = context;
@@ -14,6 +15,7 @@ const initialState = (context) => {
 		score: 0,
 		user: false,
 		owner: false,
+		isActive: false,
 	};
 };
 
@@ -24,6 +26,7 @@ const App = (context) => {
 	return <div className="App">
 		<Header { ...extendedContext }/>
 		<MainScreen { ...extendedContext }/>
+		<WelcomePage { ...extendedContext }/>
 	</div>;
 };
 
