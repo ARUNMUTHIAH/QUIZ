@@ -3,14 +3,15 @@ import { TextField } from '@mui/material';
 
 const QuestionInput = (context) => {
 	const { setState, state } = context;
-	const { Input } = state;
+	const { input } = state;
 
 	return (
 		<TextField { ...{
 			placeholder: 'Question',
+			value: input.question,
 			onChange: ({ target: { value }}) => setState({
 				...state,
-				Input: { ...Input, question: value },
+				input: { ...input, question: value },
 			}),
 		} }
 		/>);

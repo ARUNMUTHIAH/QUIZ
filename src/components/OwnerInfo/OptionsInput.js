@@ -1,17 +1,24 @@
 import React from 'react';
-import { TextField } from '@mui/material';
+import { Box, TextField } from '@mui/material';
+import OptionAdd from '../OptionAdd';
 
 const OptionsInput = (context) => {
-	const { setState, state, state: { Input }} = context;
-	const { Input: { options }} = state;
+	const { setState, state } = context;
+	const { option } = state;
 
 	return (
-		<TextField { ...{ placeholder: 'Options',
-			onChange: ({ target: { value }}) => setState({
-				...state,
-				Input: { ...Input, options: [...options, value] },
-			}) } }
-		/>
+		<Box>
+			<TextField { ...{
+				placeholder: 'Options',
+				value: option,
+				onChange: ({ target: { value }}) => setState({
+					...state,
+					option: value,
+				}),
+			} }
+			/>
+			<OptionAdd { ...context }/>
+		</Box>
 	);
 };
 

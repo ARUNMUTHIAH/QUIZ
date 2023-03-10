@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 const config = {
+	inputData: { question: '', options: [], answer: '' },
 	quizData: [
 		{
 			question: 'Which one of the following is not a Javascript framework?',
