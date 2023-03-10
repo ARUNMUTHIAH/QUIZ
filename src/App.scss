@@ -1,7 +1,5 @@
 .App {
 	text-align: center;
-	margin-top: 3%;
-	margin-right: 10%;
 }
 
 .container {
@@ -85,7 +83,7 @@
 .quiz {
 	position: relative;
 	top: 48%;
-	right: 29%;
+	right: 26%;
 	width: 20%;
 	height: 13%;
 	font-family: 'Gill Sans';
@@ -101,7 +99,7 @@
 
 .action {
 	justify-content: center;
-	background-image: url(https://cutewallpaper.org/25/animated-gradient-wallpaper/gradient-22f23-background-fd951-10-33649-by-8290b-tutku-26245-tetik-5f647-on-df117-dribbble.gif);
+	background-image: url(https://media.istockphoto.com/id/1023387542/photo/light-bulb-with-hanging-lights-background.jpg?s=170667a&w=0&k=20&c=ie3cSGecgmT6GjBmCGyszXc1flCZLODpYvsAOydWgfc=);
 	width: 100vw;
 	height: 100vh;
 	background-repeat: no-repeat;
@@ -112,17 +110,18 @@
 	margin-top: 15%;
 	margin-left: 7%;
 	font-size: 5em;
-	color: rgb(236, 47, 170);
-	text-shadow: 0 0 10px #000, 0 0 10px #000, 0 0 10px #000;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 10px #0fc3eb, 0 0 10px #0fc3eb;
 	font-family:'Gill Sans';
 }
 
 .userButton {
 	position: relative;
-	margin-top: -4%;
-	right: -10%;
-	height: 7%;
-	width: 16%;
+	margin-top: -3.5%;
+	right: -11%;
+	height: 6%;
+	width: 13%;
 	font-family: sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -137,22 +136,28 @@
 	position: relative;
 	margin-top: -3%;
 	margin-left: 80%;
-	height: 7%;
-	width: 18%;
+	height: 6%;
+	width: 15%;
 	font-family: sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-size: 3em;
 	color: black;
 	background: linear-gradient(90deg, #0162c8, #55e7fc);
-	border: 2px solid rgb(18, 2, 2);
+	border: 2px solid rgb(2, 10, 18);
 	border-radius: 40px;
+}
+
+.banner {
+	margin-top: -3%;
+	border: 2px solid black;
 }
 
 
 .header {
 	display: flex;
 	flex-direction: row;
+	margin-top: 3%;
 }
 
 .icon {
@@ -184,17 +189,17 @@
 
 .logIn {
 	position: relative;
-	left: 24%;
+	left: 20%;
 }
 
 .signUp {
 	position: relative;
-	left: 26%;
+	left: 22%;
 }
 
 .menuBar {
 	position: relative;
-	left: 28%;
+	left: 24%;
 	height: 2%;
 	border: 3px solid black;
 	border-radius: 15%;
@@ -202,7 +207,7 @@
 }
 
 .categories {
-	margin-top: 23%;
+	margin-top: 7%;
 	border: 1px solid rgb(37, 37, 78);
 	height: 280px;
 	width: 18%;
@@ -248,3 +253,9 @@
 	width: 90%;
 	background: rgb(41, 161, 216);
 }
+
+// .homePage {
+// 	height: 100vh;
+// 	width: 100vw;
+// 	background-image: linear-gradient(red,yellow,green);
+// }
