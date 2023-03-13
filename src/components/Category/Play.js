@@ -5,9 +5,8 @@ const Play = (context) => {
 	const { setState } = context;
 
 	return (
-		<Box>
+		<Box className="play">
 			<Button { ...{
-				className: 'play',
 				variant: 'contained',
 				size: 'large',
 				onClick: () => setState((state) => ({
