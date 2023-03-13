@@ -3,17 +3,19 @@ import { React, useState } from 'react';
 import WelcomePage from './components/Theme';
 
 const initialState = (context) => {
-	const { config: { quizData }} = context;
+	const { config: { categories }} = context;
 
 	return {
 		currentQuestion: 0,
+		currentCategory: 0,
 		userAnswer: null,
-		userInfo: quizData,
+		userInfo: categories,
 		Input: { question: '', options: [], answer: '' },
 		score: 0,
 		user: false,
 		owner: false,
 		isActive: false,
+		isPlay: false,
 	};
 };
 

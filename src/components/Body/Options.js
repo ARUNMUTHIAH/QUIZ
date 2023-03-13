@@ -1,13 +1,14 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Box } from '@mui/material';
 
 const Options = (context) => {
-	const { state: { userAnswer, userInfo, currentQuestion }, state,
+	const { state: { userAnswer, userInfo, currentQuestion, currentCategory }, state,
 		setState } = context;
 
 	return (
 		<Box>
-			{userInfo[currentQuestion].options.map((option, key) =>
+			{userInfo[currentCategory].quizData[currentQuestion].options.map((option, key) =>
 				<Box
 					key={ key }
 					{ ...{ className: userAnswer === option
