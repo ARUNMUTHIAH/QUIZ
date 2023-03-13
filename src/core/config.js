@@ -35,6 +35,7 @@ const config = {
 		{
 			name: 'funny',
 			image: '/img/funny.png',
+			id: 1,
 			quizData: [{
 				question: 'How do you make the number one disappear?',
 				options: ['D', 'C', 'G'],
@@ -64,7 +65,7 @@ const config = {
 		{
 			name: 'maths',
 			image: '/img/maths.png',
-			id: 1,
+			id: 2,
 			quizData: [
 				{
 					question: '60 Times of 8 Equals to ?',
@@ -96,8 +97,8 @@ const config = {
 		{
 			name: 'gk',
 			image: '/img/gk.png',
-			id: 2,
-			gk: [
+			id: 3,
+			quizData: [
 				{
 					question: 'For which of the following disciplines is Nobel Prize awarded ?',
 					options: ['Physics and Chemistry', 'Physiology or Medicine', 'Literature, Peace and Economics', 'All of the above'],
@@ -128,7 +129,7 @@ const config = {
 		{
 			name: 'javaScript',
 			image: '/img/js.png',
-			id: 3,
+			id: 4,
 			quizData: [{
 				question: 'Can you pass a anonymous function as an argument to another function?',
 				options: ['true', 'false'],
@@ -158,7 +159,7 @@ const config = {
 		{
 			name: 'food',
 			image: '/img/food.png',
-			id: 4,
+			id: 5,
 			quizData: [{
 				question: 'Where does coffee originate from?',
 				options: ['Canada', 'Italy', 'Ethiopia', 'None of these'],
