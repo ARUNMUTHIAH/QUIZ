@@ -3,7 +3,7 @@ import { React, useState } from 'react';
 import WelcomePage from './components/Theme';
 
 const initialState = (context) => {
-	const { config: { categories, inputData }} = context;
+	const { config: { inputData, categories }} = context;
 
 	return {
 		currentQuestion: 0,

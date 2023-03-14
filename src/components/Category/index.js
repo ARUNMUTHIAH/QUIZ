@@ -17,7 +17,7 @@ const MainScreen = (context) => {
 					<QuizName { ...context }/>
 					<CategoryLogo { ...context }/>
 					<CategoryName { ...{ ...context, data: category } }/>
-					<Play { ...context }/>
+					<Play { ...{ ...context, data: category } }/>
 				</Box>) }
 		</Box>);
 };

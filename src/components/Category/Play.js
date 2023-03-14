@@ -2,7 +2,7 @@ import { Box, Button } from '@mui/material';
 import React from 'react';
 
 const Play = (context) => {
-	const { setState } = context;
+	const { setState, config: { categories }, data: category } = context;
 
 	return (
 		<Box className="play">
@@ -12,6 +12,8 @@ const Play = (context) => {
 				onClick: () => setState((state) => ({
 					...state,
 					isPlay: !state.isPlay,
+					userInfo: categories.filter((value) =>
+						value.id === category.id),
 				})),
 			} }
 			>PLAY NOW!</Button>
