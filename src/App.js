@@ -13,9 +13,9 @@ const initialState = (context) => {
 		option: '',
 		input: inputData,
 		score: 0,
-		user: false,
+		user: true,
 		owner: false,
-		isActive: false,
+		isActive: true,
 		isPlay: false,
 	};
 };
