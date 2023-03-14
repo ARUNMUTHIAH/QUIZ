@@ -1,12 +1,11 @@
 /* eslint-disable no-magic-numbers */
 
-import { peek } from '@laufire/utils/debug';
-
-/* eslint-disable max-len */
 const updateScore = (context) => {
-	const { state: { score, currentQuestion, userAnswer, userInfo, currentCategory }} = context;
+	const { state: { score, currentQuestion, userAnswer,
+		userInfo, currentCategory }} = context;
 
-	return peek(userAnswer) === peek(userInfo[currentCategory].quizData[currentQuestion].answer)
+	return userAnswer === userInfo[currentCategory]
+		.quizData[currentQuestion].answer
 		? score + 1
 		: score;
 };

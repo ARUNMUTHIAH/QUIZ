@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../services/QuizManager';
-import { peek } from '@laufire/utils/debug';
 
 const CommonAdd = (context) => {
 	const { setState, state, state: { userInfo }, config } = context;
@@ -13,7 +12,7 @@ const CommonAdd = (context) => {
 			variant="contained"
 			onClick={ () => setState({
 				...state,
-				userInfo: peek([...userInfo, input]),
+				userInfo: [...userInfo, input],
 				input: config.inputData,
 			}) }
 		>

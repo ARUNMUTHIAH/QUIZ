@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import { Box } from '@mui/material';
 import FinalScreen from './FinalScreen';

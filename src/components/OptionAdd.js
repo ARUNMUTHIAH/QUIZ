@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { Button } from '@mui/material';
 import React from 'react';
 
@@ -10,7 +9,7 @@ const OptionAdd = (context) => {
 		<Button
 			onClick={ () => setState({
 				...state,
-				input: { ...input, options: peek([...options, option]) },
+				input: { ...input, options: [...options, option] },
 				option: config.inputData.options,
 			}) }
 		>Add

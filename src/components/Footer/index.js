@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { Box } from '@mui/material';
 import React from 'react';
 import QuizManager from '../../services/QuizManager';
