@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import './App.scss';
 import { React } from 'react';
 import Quiz from './components/Quiz';
