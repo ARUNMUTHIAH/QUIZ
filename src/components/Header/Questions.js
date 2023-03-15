@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, InputLabel } from '@mui/material';
+import { Box } from '@mui/material';
 import Options from '../Body/Options';
 import QuestionsCount from './QuestionsCount';
 
@@ -8,9 +8,9 @@ const Questions = (context) => {
 
 	return (
 		<Box className="outerBorder">
-			<InputLabel class="question">
+			<h1 className="question">
 				{userInfo[currentCategory]
-					.quizData[currentQuestion].question}</InputLabel>
+					.quizData[currentQuestion].question}</h1>
 			<QuestionsCount { ...context }/>
 			<Options { ...context }/>
 		</Box>);

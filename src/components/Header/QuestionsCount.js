@@ -1,14 +1,13 @@
-import { Box } from '@mui/material';
 import React from 'react';
 
 const QuestionsCount = (context) => {
 	const { state: { currentQuestion, userInfo, currentCategory }} = context;
 
 	return (
-		<Box className="question">
+		<h1>
 			Questions {currentQuestion + 1}
 			out of {userInfo[currentCategory].quizData.length}
-		</Box>);
+		</h1>);
 };
 
 export default QuestionsCount;

@@ -13,7 +13,7 @@ const Options = (context) => {
 					<Box
 						key={ key }
 						{ ...{ className: userAnswer === option
-							? 'correctOption'
+							? 'selectedOption'
 							: 'option',
 						onClick: () => setState({
 							...state,

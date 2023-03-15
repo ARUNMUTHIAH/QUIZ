@@ -7,7 +7,7 @@ const Banner = () =>
 			className="banner"
 			src="/images/banner.jpg"
 			alt="fs"
-			width="1750px"
+			width="1700px"
 			height="380px"
 		/>
 	</Box>;
