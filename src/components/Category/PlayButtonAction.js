@@ -1,13 +1,22 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import Display from '../Display';
+import NextCategoryAction from '../Footer/NextCategory';
+import OverAllFinish from '../Footer/OverAllFinish';
 import HomePage from '../HomePage';
 
 const PlayButtonAction = (context) => {
-	const { state: { isPlay }} = context;
+	const { state: { isPlay, isNext }} = context;
 
-	return isPlay
-		? <Display { ...context }/>
-		: <HomePage { ...context }/>;
+	return (
+		<Box>
+			{isPlay
+				? <Display { ...context }/>
+				: <HomePage { ...context }/>}
+			{isNext
+				? <OverAllFinish { ...context }/>
+				: <NextCategoryAction { ...context }/>}
+		</Box>);
 };
 
 export default PlayButtonAction;

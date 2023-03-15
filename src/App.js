@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import './App.scss';
 import { React, useState } from 'react';
-import WelcomePage from './components/Theme';
+import Quiz from './components/Quiz';
+import { Box } from '@mui/material';
 
 const initialState = (context) => {
 	const { config: { inputData, categories }} = context;
@@ -13,10 +15,12 @@ const initialState = (context) => {
 		option: '',
 		input: inputData,
 		score: 0,
-		user: true,
+		user: false,
 		owner: false,
-		isActive: true,
+		isActive: false,
 		isPlay: false,
+		isNext: false,
+		isFinish: false,
 	};
 };
 
@@ -24,9 +28,9 @@ const App = (context) => {
 	const [state, setState] = useState(initialState(context));
 	const extendedContext = { ...context, state, setState };
 
-	return <div className="App">
-		<WelcomePage { ...extendedContext }/>
-	</div>;
+	return <Box className="App">
+		<Quiz { ...extendedContext }/>
+	</Box>;
 };
 
 export default App;

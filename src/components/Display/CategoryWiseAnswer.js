@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-const FinalScreen = (context) => {
+const CategoryWiseAnswer = (context) => {
 	const { state: { score, currentCategory, userInfo }} = context;
 
 	return (
@@ -17,4 +17,4 @@ const FinalScreen = (context) => {
 		</Box>);
 };
 
-export default FinalScreen;
+export default CategoryWiseAnswer;

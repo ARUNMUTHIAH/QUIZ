@@ -14,6 +14,7 @@ const Play = (context) => {
 					isPlay: !state.isPlay,
 					userInfo: categories.filter((value) =>
 						value.id === category.id),
+					isNext: false,
 				})),
 			} }
 			>PLAY NOW!</Button>
