@@ -1,6 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable no-magic-numbers */
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
 
@@ -20,6 +17,7 @@ const NextCategory = (context) => {
 					currentQuestion: 0,
 					userInfo: categories,
 					userAnswer: '',
+					score: 0,
 				};
 			}),
 		} }
