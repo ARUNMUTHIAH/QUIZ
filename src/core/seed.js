@@ -8,12 +8,11 @@ const seed = {
 	option: '',
 	input: config.inputData,
 	score: 0,
-	user: false,
-	owner: false,
-	isActive: false,
 	isPlay: false,
 	isNext: false,
 	isFinish: false,
+	role: '',
+	suggestions: [],
 };
 
 export default seed;
