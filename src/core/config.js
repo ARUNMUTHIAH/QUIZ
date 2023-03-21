@@ -6,6 +6,7 @@ const config = {
 			name: 'cricket',
 			image: '/img/cricket.png',
 			id: 0,
+			isComplete: false,
 			quizData: [{
 				question: 'In which country did cricket originate?',
 				options: ['England', 'South Africa', 'Australia'],
@@ -36,6 +37,7 @@ const config = {
 			name: 'funny',
 			image: '/img/funny.png',
 			id: 1,
+			isComplete: false,
 			quizData: [{
 				question: 'How do you make the number one disappear?',
 				options: ['D', 'C', 'G'],
@@ -66,6 +68,7 @@ const config = {
 			name: 'maths',
 			image: '/img/maths.png',
 			id: 2,
+			isComplete: false,
 			quizData: [
 				{
 					question: '60 Times of 8 Equals to ?',
@@ -98,6 +101,7 @@ const config = {
 			name: 'gk',
 			image: '/img/gk.png',
 			id: 3,
+			isComplete: false,
 			quizData: [
 				{
 					question: 'For which of the following disciplines is Nobel Prize awarded ?',
@@ -130,6 +134,7 @@ const config = {
 			name: 'javaScript',
 			image: '/img/js.png',
 			id: 4,
+			isComplete: false,
 			quizData: [{
 				question: 'Can you pass a anonymous function as an argument to another function?',
 				options: ['true', 'false'],
@@ -160,6 +165,7 @@ const config = {
 			name: 'food',
 			image: '/img/food.png',
 			id: 5,
+			isComplete: false,
 			quizData: [{
 				question: 'Where does coffee originate from?',
 				options: ['Canada', 'Italy', 'Ethiopia', 'None of these'],
@@ -184,6 +190,17 @@ const config = {
 				question: 'The Chinese gooseberry fruit is also known as?',
 				options: ['Kiwi Fruit', 'Dragon Fruit', 'Rambutans', 'Lychee'],
 				answer: 'Kiwi Fruit',
+			}],
+		},
+		{
+			name: 'suggestion',
+			image: '/img/js.png',
+			id: 6,
+			isComplete: false,
+			quizData: [{
+				question: '',
+				options: [],
+				answer: '',
 			}],
 		},
 	],
