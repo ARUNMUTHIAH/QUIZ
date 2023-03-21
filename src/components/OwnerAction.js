@@ -3,9 +3,9 @@ import Inputs from './OwnerInfo';
 import OwnerButton from './OwnerButton';
 
 const OwnerAction = (context) => {
-	const { state: { owner }} = context;
+	const { state: { role }} = context;
 
-	return owner
+	return role
 		? <Inputs { ...context }/>
 		: <OwnerButton { ...context }/>;
 };

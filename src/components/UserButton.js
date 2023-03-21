@@ -9,8 +9,7 @@ const UserButton = (context) => {
 			className="userButton"
 			onClick={ () => setState((state) => ({
 				...state,
-				user: true,
-				owner: false,
+				role: 'user',
 			})) }
 		>START</Box>);
 };

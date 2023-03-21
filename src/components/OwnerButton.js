@@ -9,8 +9,7 @@ const OwnerButton = (context) => {
 			className="ownerButton"
 			onClick={ () => setState((state) => ({
 				...state,
-				owner: true,
-				user: false,
+				role: 'owner',
 			})) }
 		>CREATE</Box>);
 };

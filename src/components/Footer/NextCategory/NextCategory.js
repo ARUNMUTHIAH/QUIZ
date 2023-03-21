@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable no-magic-numbers */
+/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
 

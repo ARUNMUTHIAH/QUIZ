@@ -3,9 +3,9 @@ import PlayButtonAction from './Category/PlayButtonAction';
 import UserButton from './UserButton';
 
 const UserAction = (context) => {
-	const { state: { user }} = context;
+	const { state: { role }} = context;
 
-	return user
+	return role
 		? <PlayButtonAction { ...context }/>
 		: <UserButton { ...context }/>;
 };

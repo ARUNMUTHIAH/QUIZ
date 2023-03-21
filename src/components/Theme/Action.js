@@ -1,13 +1,16 @@
-import { Box, InputLabel } from '@mui/material';
+/* eslint-disable complexity */
+/* eslint-disable no-console */
+/* eslint-disable max-lines-per-function */
 import React from 'react';
+import { Box, InputLabel } from '@mui/material';
 import OwnerAction from '../OwnerAction';
 import UserAction from '../UserAction';
 
 const Action = (context) => {
 	const {
-		state: { user, owner },
+		state: { role },
 	} = context;
-	const isUserExist = user || owner;
+	const isUserExist = role;
 
 	return (
 		<Box>
@@ -17,8 +20,8 @@ const Action = (context) => {
 					: <InputLabel class="actionLabel">
 						Quiz & Prove Your Worth!
 					</InputLabel>}
-				<UserAction { ...context }/>
-				<OwnerAction { ...context }/>
+				{role !== 'user' && <OwnerAction { ...context }/>}
+				{role !== 'owner' && <UserAction { ...context }/> }
 			</Box>
 		</Box>
 	);
