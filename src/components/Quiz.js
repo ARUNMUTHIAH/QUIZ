@@ -1,13 +1,13 @@
 import React from 'react';
 import CongratulationScreen from './CongratulationScreen/CongratulationScreen';
-import Action from './Theme/Action';
+import FrontScreen from './Theme';
 
 const Quiz = (context) => {
 	const { state: { isFinish }} = context;
 
 	return isFinish
 		? <CongratulationScreen { ...context }/>
-		: <Action { ...context }/>;
+		: <FrontScreen { ...context }/>;
 };
 
 export default Quiz;
