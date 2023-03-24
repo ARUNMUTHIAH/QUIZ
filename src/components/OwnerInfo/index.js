@@ -1,18 +1,18 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import CommonAdd from '../CommonAdd';
-import UserButton from '../Theme/UserButton';
-import AnswerInput from './AnswerInput';
-import OptionsInput from './OptionsInput';
-import QuestionInput from './QuestionInput';
+import UserButton from '../UserButton';
+import Answer from './Answer';
+import Options from './Options';
+import Question from './Question';
 
-const Inputs = (context) =>
+const OwnerInputs = (context) =>
 	<Box>
-		<QuestionInput { ...context }/>
-		<OptionsInput { ...context }/>
-		<AnswerInput { ...context }/>
+		<Question { ...context }/>
+		<Options { ...context }/>
+		<Answer { ...context }/>
 		<CommonAdd { ...context }/>
 		<UserButton { ...context }/>
 	</Box>;
 
-export default Inputs;
+export default OwnerInputs;
