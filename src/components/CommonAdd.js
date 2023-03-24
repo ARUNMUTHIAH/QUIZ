@@ -3,8 +3,7 @@ import { Button } from '@mui/material';
 import QuizManager from '../services/QuizManager';
 
 const CommonAdd = (context) => {
-	const { setState, state, state: { userInfo }, config } = context;
-	const { input } = state;
+	const { setState, state, state: { userInfo, input }, config } = context;
 
 	return (
 		<Button
