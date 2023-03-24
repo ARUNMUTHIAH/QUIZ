@@ -4,6 +4,7 @@ import Display from '../Display';
 import NextCategoryAction from '../Footer/NextCategory';
 import OverAllFinish from '../Footer/OverAllFinish';
 import HomePage from '../HomePage';
+import OwnerButton from '../OwnerButton';
 
 const PlayButtonAction = (context) => {
 	const { state: { isPlay, isNext }} = context;
@@ -16,6 +17,7 @@ const PlayButtonAction = (context) => {
 			{isNext
 				? <OverAllFinish { ...context }/>
 				: <NextCategoryAction { ...context }/>}
+			<OwnerButton { ...context }/>
 		</Box>);
 };
 

@@ -3,13 +3,10 @@
 /* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Box, InputLabel } from '@mui/material';
-import OwnerAction from '../OwnerAction';
-import UserAction from '../UserAction';
+import SelectAllButton from '../SelectAllButton';
 
 const Action = (context) => {
-	const {
-		state: { role },
-	} = context;
+	const { state: { role }} = context;
 	const isUserExist = role;
 
 	return (
@@ -20,8 +17,7 @@ const Action = (context) => {
 					: <InputLabel class="actionLabel">
 						Quiz & Prove Your Worth!
 					</InputLabel>}
-				{role !== 'user' && <OwnerAction { ...context }/>}
-				{role !== 'owner' && <UserAction { ...context }/> }
+				<SelectAllButton { ...context }/>
 			</Box>
 		</Box>
 	);
