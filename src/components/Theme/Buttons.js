@@ -9,10 +9,10 @@ const Buttons = (context) => {
 
 	return role === ''
 		? <Box>
-			<OwnerButton { ...context }/>
 			<UserButton { ...context }/>
+			<OwnerButton { ...context }/>
 		</Box>
-		: <SelectedComponents{ ...context }/>;
+		: <SelectedComponents { ...context }/>;
 };
 
 export default Buttons;
