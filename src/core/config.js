@@ -192,17 +192,6 @@ const config = {
 				answer: 'Kiwi Fruit',
 			}],
 		},
-		{
-			name: 'suggestion',
-			image: '/img/js.png',
-			id: 6,
-			isComplete: false,
-			quizData: [{
-				question: '',
-				options: [],
-				answer: '',
-			}],
-		},
 	],
 };
 
