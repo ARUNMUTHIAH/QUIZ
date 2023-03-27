@@ -94,7 +94,8 @@
 }
 
 .actionLabel {
-	margin-left: 5%;
+	margin-top: -10%;
+	margin-left: 25%;
 	font-size: 5em;
 	font-weight: bold;
 	color: white;
@@ -104,10 +105,10 @@
 
 .userButton {
 	position: sticky;
-	bottom: 0;
+	margin-left: 520px;
 	padding: 10px;
 	width: max-content;
-	font-family: sans-serif;
+	font-family: 'Gill Sans';
 	text-transform: uppercase;
 	font-size: 3em;
 	color: black;
@@ -118,10 +119,10 @@
 
 .ownerButton {
 	position: sticky;
-	bottom: 0;
+	margin-left: 500px;
 	padding: 10px;
 	width: max-content;
-	font-family: sans-serif;
+	font-family: 'Gill Sans';
 	text-transform: uppercase;
 	font-size: 3em;
 	color: black;
@@ -227,7 +228,6 @@
 	width: 90%;
 	background: rgb(41, 161, 216);
 }
-
 
 .congratulationScreen {
 	background-image: url(https://th.bing.com/th/id/R.42e33ad2f37d42423603e07e738780ed?rik=JRvoGzoIvzmGnw&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2017%2f02%2fFree-Animated-Congratulation-Images.jpg&ehk=ctw2dxWgw4HIgeCk8bEIYiXCMZzJ88UnYxHz777MTqU%3d&risl=&pid=ImgRaw&r=0);
