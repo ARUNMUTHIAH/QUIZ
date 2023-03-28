@@ -1,12 +1,15 @@
 import React from 'react';
 
 const CategoriesList = (context) => {
-	const { config: { categories }, setState, state, userInfo } = context;
+	const { config: { categories }, setState, state } = context;
 
 	return (
 		<select
-			onChange={ ({ target: { value }}) => setState({ ...state,
-				userInfo: { ...userInfo, name: value }}) }
+			onChange={ ({ target: { value }}) =>
+				setState({
+					...state,
+					dropDownList: value,
+				}) }
 		>
 			{categories.map((category, key) =>
 				<option

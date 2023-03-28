@@ -12,7 +12,7 @@ const seed = {
 	isNext: false,
 	isFinish: false,
 	role: '',
-	suggestions: [],
+	dropDownList: '',
 };
 
 export default seed;

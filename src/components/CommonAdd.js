@@ -5,7 +5,7 @@ import QuizManager from '../services/QuizManager';
 import { peek } from '@laufire/utils/debug';
 
 const CommonAdd = (context) => {
-	const { setState, state, state: { userInfo, input }, config: { categories }, config } = context;
+	const { setState, state, state: { userInfo, input, dropDownList }, config } = context;
 
 	return (
 		<Button
@@ -13,9 +13,9 @@ const CommonAdd = (context) => {
 			variant="contained"
 			onClick={ () => setState({
 				...state,
-				userInfo: userInfo.map((user) => (peek(user) === categories.name
-					? [...user.quizData, input]
-					: '')),
+				userInfo: userInfo.map((user) => (user.name === dropDownList
+					? peek({ ...user, quizData: [...user.quizData, input] })
+					: user)),
 				input: config.inputData,
 			}) }
 		>
