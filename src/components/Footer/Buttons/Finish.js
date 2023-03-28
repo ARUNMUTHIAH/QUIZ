@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable no-magic-numbers */
 import React from 'react';
 import { Button } from '@mui/material';
@@ -9,7 +10,8 @@ const Finish = (context) => {
 		state: { userAnswer, currentQuestion, userInfo }} = context;
 
 	return (
-		<Button { ...{ variant: 'contained',
+		<Button { ...{
+			variant: 'contained',
 			size: 'large',
 			disabled: !userAnswer,
 			onClick: () => setState((prevState) => ({
@@ -17,10 +19,11 @@ const Finish = (context) => {
 				score: QuizManager.updateScore(context),
 				currentQuestion: currentQuestion + 1,
 				isNext:
-				userInfo[prevState.currentCategory].id + 1 === 6
-					? !prevState.isNext
-					: prevState.isNext,
-			}))		} }
+					userInfo[prevState.currentCategory].id + 1 === 6
+						? !prevState.isNext
+						: prevState.isNext,
+			})),
+		} }
 		><DoneAllTwoToneIcon/></Button>);
 };
 

@@ -1,11 +1,8 @@
-/* eslint-disable max-len */
-/* eslint-disable no-magic-numbers */
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
 
 const NextCategory = (context) => {
-	const { config: { categories }, setState } = context;
+	const { setState } = context;
 
 	return (
 		<Button { ...{
@@ -18,7 +15,7 @@ const NextCategory = (context) => {
 					...prevState,
 					currentCategory: userInfo[prevState.currentCategory].id + 1,
 					currentQuestion: 0,
-					userInfo: categories,
+					userInfo: prevState.Info,
 					userAnswer: '',
 					score: 0,
 				};

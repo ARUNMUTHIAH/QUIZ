@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../services/QuizManager';
-import { peek } from '@laufire/utils/debug';
 
 const CommonAdd = (context) => {
-	const { setState, state, state: { userInfo, input, dropDownList }, config } = context;
+	const { setState, state,
+		state: { Info, input, dropDownList }, config } = context;
 
 	return (
 		<Button
@@ -13,8 +12,8 @@ const CommonAdd = (context) => {
 			variant="contained"
 			onClick={ () => setState({
 				...state,
-				userInfo: userInfo.map((user) => (user.name === dropDownList
-					? peek({ ...user, quizData: [...user.quizData, input] })
+				Info: Info.map((user) => (user.name === dropDownList
+					? { ...user, quizData: [...user.quizData, input] }
 					: user)),
 				input: config.inputData,
 			}) }

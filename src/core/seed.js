@@ -5,6 +5,7 @@ const seed = {
 	currentCategory: 0,
 	userAnswer: null,
 	userInfo: config.categories,
+	Info: config.categories,
 	option: '',
 	input: config.inputData,
 	score: 0,
