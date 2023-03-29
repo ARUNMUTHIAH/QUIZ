@@ -1,10 +1,11 @@
+/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../services/QuizManager';
 
 const CommonAdd = (context) => {
 	const { setState, state,
-		state: { Info, input, dropDownList }, config } = context;
+		state: { categoriesData, input, dropDownList }, config } = context;
 
 	return (
 		<Button
@@ -12,15 +13,18 @@ const CommonAdd = (context) => {
 			variant="contained"
 			onClick={ () => setState({
 				...state,
-				Info: Info.map((user) => (user.name === dropDownList
-					? { ...user, quizData: [...user.quizData, input] }
-					: user)),
+				categoriesData: categoriesData.map((category) =>
+					(category.name === dropDownList
+						? {
+							...category,
+							quizData: [...category.quizData, input],
+						}
+						: category)),
 				input: config.inputData,
 			}) }
 		>
 			+
-		</Button>
-	);
+		</Button>);
 };
 
 export default CommonAdd;

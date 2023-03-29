@@ -7,7 +7,8 @@ import DoneAllTwoToneIcon from '@mui/icons-material/DoneAllTwoTone';
 
 const Finish = (context) => {
 	const { setState,
-		state: { userAnswer, currentQuestion, userInfo }} = context;
+		state: { userAnswer, currentQuestion,
+			userInfo }} = context;
 
 	return (
 		<Button { ...{
