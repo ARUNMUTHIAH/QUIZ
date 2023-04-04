@@ -7,7 +7,6 @@
 	flex-wrap: wrap;
 }
 
-
 .outerBorder {
 	display: flex;
 	margin-top: 5%;
@@ -45,14 +44,6 @@
 	background-color: rgb(128, 204, 230);
 }
 
-.frontScreen {
-	display: flex;
-	background-image: url(https://ak.picdn.net/shutterstock/videos/1020525820/thumb/1.jpg);
-	height: 100vh;
-	width: 100vw;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 .starter {
 	margin-top: 17%;
@@ -132,9 +123,10 @@
 }
 
 .banner {
-	border: 2px solid black;
+	margin-left: 1%;
+	width: 1700px;
+	height: 380px;
 }
-
 
 .header {
 	position: sticky;
@@ -150,6 +142,8 @@
 .icon {
 	position: relative;
 	bottom: 40%;
+	width: 170px;
+	height: 170px;
 }
 
 .textBox {
@@ -235,4 +229,126 @@
 	width: 100vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+
+	.categories {
+		margin-top: 37%;
+		border: 1px solid rgb(37, 37, 78);
+		height: 230px;
+		width: 33%;
+		margin-left: 13%;
+		border-radius: 5%;
+		background-color: rgba(229, 138, 138, 0.801);
+	}
+
+	.play {
+		position: relative;
+		top: -50%;
+		height: 10%;
+	}
+
+	.banner {
+		margin-left: 1%;
+		width: 100%;
+		height: 100%;
+	}
+
+	.outerBorder {
+		display: flex;
+		margin-top: 5%;
+		flex-direction: column;
+		align-items: center;
+		background-color: wheat;
+		width: 80%;
+		border: 6px double rgb(65, 189, 189);
+	}
+
+	.ownerButton {
+		position: sticky;
+		padding: 10px;
+		margin-left: 40%;
+		width: max-content;
+		font-family: 'Gill Sans';
+		text-transform: uppercase;
+		font-size: 3em;
+		color: black;
+		background: linear-gradient(90deg, #0162c8, #55e7fc);
+		border: 2px solid rgb(2, 10, 18);
+		border-radius: 40px;
+	}
+
+	.userButton {
+		position: sticky;
+		margin-left: 40%;
+		padding: 10px;
+		width: max-content;
+		font-family: 'Gill Sans';
+		text-transform: uppercase;
+		font-size: 3em;
+		color: black;
+		background: linear-gradient(90deg, #0162c8, #55e7fc);
+		border: 2px solid rgb(18, 2, 2);
+		border-radius: 40px;
+	}
+
+	.action {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px 40px;
+		width:100%;
+		height: 100%;
+		background-image: linear-gradient(rgb(202, 83, 83),rgb(120, 206, 120),rgb(80, 80, 189));
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.actionLabel {
+		margin-top: 20%;
+		margin-left:20px;
+		font-size: 4em;
+		font-weight: bold;
+		color: white;
+		text-shadow: 0 0 10px #0fc3eb, 0 0 10px #0fc3eb;
+		font-family: 'Gill Sans';
+	}
+
+	.userButton {
+		position: sticky;
+		margin-left: 40px;
+		width: max-content;
+		font-family: 'Gill Sans';
+		text-transform: uppercase;
+		font-size: 2em;
+		color: black;
+		background: linear-gradient(90deg, #0162c8, #55e7fc);
+		border: 2px solid rgb(18, 2, 2);
+		border-radius: 40px;
+	}
+
+	.ownerButton {
+		position: sticky;
+		margin-bottom:20px ;
+		margin-left: 30px;
+		width: max-content;
+		font-family: 'Gill Sans';
+		text-transform: uppercase;
+		font-size: 2em;
+		color: black;
+		background: linear-gradient(90deg, #0162c8, #55e7fc);
+		border: 2px solid rgb(2, 10, 18);
+		border-radius: 40px;
+	}
+
+	.congratulationScreen {
+		background-image: url(https://th.bing.com/th/id/R.42e33ad2f37d42423603e07e738780ed?rik=JRvoGzoIvzmGnw&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2017%2f02%2fFree-Animated-Congratulation-Images.jpg&ehk=ctw2dxWgw4HIgeCk8bEIYiXCMZzJ88UnYxHz777MTqU%3d&risl=&pid=ImgRaw&r=0);
+		height: 50vh;
+		width: 50vw;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 }

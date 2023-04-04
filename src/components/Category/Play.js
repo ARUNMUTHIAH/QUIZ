@@ -8,7 +8,6 @@ const Play = (context) => {
 		<Box className="play">
 			<Button { ...{
 				variant: 'contained',
-				size: 'large',
 				onClick: () => setState((state) => ({
 					...state,
 					isPlay: !state.isPlay,

@@ -7,8 +7,6 @@ const Icon = () =>
 			className="icon"
 			src="/images/QuizandoLogo.png"
 			alt="fs"
-			width="170px"
-			height="170px"
 		/>
 	</Box>;
 

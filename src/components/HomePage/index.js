@@ -5,7 +5,7 @@ import Banner from '../Banner';
 import MainScreen from '../Category';
 
 const HomePage = (context) =>
-	<Box className="homePage">
+	<Box>
 		<Header { ...context }/>
 		<Banner { ...context }/>
 		<MainScreen { ...context }/>
