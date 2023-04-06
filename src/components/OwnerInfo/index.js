@@ -8,7 +8,7 @@ import Options from './Options';
 import Question from './Question';
 
 const OwnerInputs = (context) =>
-	<Box>
+	<Box className="ownerInputs">
 		<Question { ...context }/>
 		<Options { ...context }/>
 		<Answer { ...context }/>

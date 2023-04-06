@@ -7,7 +7,7 @@ const Options = (context) => {
 	const { option } = state;
 
 	return (
-		<Box>
+		<Box className="optionsInput">
 			<TextField { ...{
 				placeholder: 'Options',
 				value: option,
