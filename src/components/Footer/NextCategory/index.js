@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-/* eslint-disable max-len */
 import { Box } from '@mui/material';
 import React from 'react';
 import NextCategory from './NextCategory';

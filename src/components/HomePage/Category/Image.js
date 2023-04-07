@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CategoryImage = (context) => {
+const Image = (context) => {
 	const { data: category } = context;
 
 	return (
@@ -13,4 +13,4 @@ const CategoryImage = (context) => {
 		/>);
 };
 
-export default CategoryImage;
+export default Image;

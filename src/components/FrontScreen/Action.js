@@ -1,6 +1,3 @@
-/* eslint-disable complexity */
-/* eslint-disable no-console */
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Box, InputLabel } from '@mui/material';
 import Buttons from './Buttons';

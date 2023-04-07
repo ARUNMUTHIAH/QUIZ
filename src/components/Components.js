@@ -1,8 +1,8 @@
-import PlayButtonAction from './Category/PlayButtonAction';
+import PlayAction from './HomePage/Category/PlayAction';
 import Inputs from './OwnerInfo';
 
 const Components = {
-	user: PlayButtonAction,
+	user: PlayAction,
 	owner: Inputs,
 };
 

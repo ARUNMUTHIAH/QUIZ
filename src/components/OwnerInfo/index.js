@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import CommonAdd from '../CommonAdd';
-import UserButton from '../UserButton';
+import Start from '../FrontScreen/Buttons/Start';
 import Answer from './Answer';
 import CategoriesList from './CategoriesList';
 import Options from './Options';
@@ -14,7 +14,7 @@ const OwnerInputs = (context) =>
 		<Answer { ...context }/>
 		<CommonAdd { ...context }/>
 		<CategoriesList { ...context }/>
-		<UserButton { ...context }/>
+		<Start { ...context }/>
 	</Box>;
 
 export default OwnerInputs;

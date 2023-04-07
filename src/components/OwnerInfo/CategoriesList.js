@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import { Box } from '@mui/material';
 import React from 'react';
 
@@ -21,8 +20,7 @@ const CategoriesList = (context) => {
 						value={ category.name }
 					>{category.name}</option>)}
 			</select>
-		</Box>
-	);
+		</Box>);
 };
 
 export default CategoriesList;

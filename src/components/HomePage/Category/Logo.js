@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CategoryLogo = () =>
+const Logo = () =>
 	<img
 		className="categoryLogo"
 		src="/img/logo.png"
@@ -9,4 +9,4 @@ const CategoryLogo = () =>
 		width="26%"
 	/>;
 
-export default CategoryLogo;
+export default Logo;

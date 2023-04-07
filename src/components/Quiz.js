@@ -1,6 +1,6 @@
 import React from 'react';
 import CongratulationScreen from './CongratulationScreen/CongratulationScreen';
-import FrontScreen from './Theme';
+import FrontScreen from './FrontScreen';
 
 const Quiz = (context) => {
 	const { state: { isFinish }} = context;

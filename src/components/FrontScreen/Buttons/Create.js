@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-const OwnerButton = (context) => {
+const Create = (context) => {
 	const { setState } = context;
 
 	return (
@@ -14,4 +14,4 @@ const OwnerButton = (context) => {
 		>CREATE</Box>);
 };
 
-export default OwnerButton;
+export default Create;

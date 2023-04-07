@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-const UserButton = (context) => {
+const Start = (context) => {
 	const { setState } = context;
 
 	return (
@@ -14,4 +14,4 @@ const UserButton = (context) => {
 		>START</Box>);
 };
 
-export default UserButton;
+export default Start;
