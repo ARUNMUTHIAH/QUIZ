@@ -11,7 +11,7 @@ const Categories = (context) => {
 	return (
 		<Box className="container">
 			{ categories.map((category, key) =>
-				<Box key={ key } class="categories">
+				<Box key={ key } className="categories">
 					<Image { ...{ ...context, data: category } }/>
 					<Logo { ...context }/>
 					<Name { ...{ ...context, data: category } }/>

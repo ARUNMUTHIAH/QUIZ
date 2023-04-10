@@ -9,7 +9,9 @@ const style = () =>
 
 const Tabs = () =>
 	<Box className="tabs">
-		<TabContext>
+		<TabContext
+			value=""
+		>
 			<TabList>
 				<HouseIcon sx={ { marginTop: '13px' } }/>
 				<Tab

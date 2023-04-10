@@ -1,12 +1,12 @@
 import React from 'react';
-import { Box, InputLabel } from '@mui/material';
+import { Box } from '@mui/material';
 import Buttons from '../Buttons';
 
 const Action = (context) =>
 	<Box className="action">
-		<InputLabel class="actionLabel">
+		<h2 className="actionLabel">
 			Quiz & Prove Your Worth!
-		</InputLabel>
+		</h2>
 		<Buttons { ...context }/>
 	</Box>;
 
