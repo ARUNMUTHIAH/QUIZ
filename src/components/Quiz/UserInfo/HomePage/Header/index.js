@@ -6,13 +6,13 @@ import Tabs from './Tabs';
 import LogIn from './LogIn';
 import SignUp from './SignUp';
 
-const Header = () =>
+const Header = (context) =>
 	<Box className="header">
-		<Icon/>
-		<Input/>
-		<Tabs/>
-		<LogIn/>
-		<SignUp/>
+		<Icon { ...context }/>
+		<Input { ...context }/>
+		<Tabs { ...context }/>
+		<LogIn { ...context }/>
+		<SignUp { ...context }/>
 	</Box>;
 
 export default Header;
