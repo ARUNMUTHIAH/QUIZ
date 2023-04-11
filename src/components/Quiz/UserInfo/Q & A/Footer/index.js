@@ -1,13 +1,16 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import QuizManager from '../../../../../services/QuizManager';
+import Backward from './Buttons/Backward';
 import Finish from './Buttons/Finish';
-import Next from './Buttons/Next';
+import Forward from './Buttons/Forward';
 
-const Action = (context) => <Box className="next">
-	{QuizManager.ButtonAction(context)
-		? <Finish { ...context }/>
-		: <Next { ...context }/>}
-</Box>;
+const Action = (context) =>
+	<Box className="next">
+		<Backward { ...context }/>
+		{QuizManager.ButtonAction(context)
+			? <Finish { ...context }/>
+			: <Forward { ...context }/>}
+	</Box>;
 
 export default Action;

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../../../../../../services/QuizManager';
-import ForwardIcon from '@mui/icons-material/Forward';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const Next = (context) => {
+const Forward = (context) => {
 	const { state: { currentQuestion, userAnswer },
 		setState } = context;
 
 	return (
 		<Button { ...{ variant: 'contained',
-			size: 'large',
+			size: 'medium',
+			className: 'forward',
 			disabled: !userAnswer,
 			onClick: () => setState((state) => ({
 				...state,
@@ -18,8 +19,8 @@ const Next = (context) => {
 				userAnswer: '',
 			})) } }
 		>
-			<ForwardIcon/>
+			<ArrowForwardIcon/>
 		</Button>);
 };
 
-export default Next;
+export default Forward;
