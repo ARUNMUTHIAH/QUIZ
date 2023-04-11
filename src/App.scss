@@ -123,8 +123,8 @@
 }
 
 .banner {
-	margin-left: 1%;
-	width: 1700px;
+	margin-left: 2%;
+	width: 1900px;
 	height: 380px;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .tabs {
-	padding-left: 30%
+	padding-left: 25%
 }
 
 .menuBar {
@@ -178,6 +178,7 @@
 
 .signUp {
 	margin: auto;
+	margin-left: 20px;
 }
 
 .categories {
@@ -192,7 +193,7 @@
 
 .play {
 	position: relative;
-	top: -30%;
+	top: -33%;
 }
 
 .categoryImage {
@@ -202,10 +203,10 @@
 
 .categoryName {
 	position: relative;
-	top: -98%;
 	font-size: xx-large;
 	text-shadow: 2px 2px #FF0000;
 	font-weight: bold;
+	top : -98%;
 }
 
 .categoryLogo {
@@ -215,7 +216,7 @@
 }
 
 .logIn {
-	margin-left: 30%;
+	margin-left: 15%;
 }
 
 .label {
@@ -254,7 +255,7 @@
 @media only screen and (max-width: 1200px) {
 
 	.categories {
-		margin-top: 37%;
+		margin-top: 20%;
 		border: 1px solid rgb(37, 37, 78);
 		height: 230px;
 		width: 33%;
@@ -263,16 +264,24 @@
 		background-color: rgba(229, 138, 138, 0.801);
 	}
 
+
 	.play {
 		position: relative;
-		top: -50%;
-		height: 10%;
+		top: -35%;
+	}
+
+	.textBox {
+		margin-left: 5%;
+		border: 2px solid black;
+		width: 55%;
+		height: 55px;
+		border-radius: 10px;
 	}
 
 	.banner {
 		margin-top: 3%;
-		margin-left: 3%;
-		width: 100%;
+		margin-left: 5%;
+		width: 90%;
 		height: 100%;
 	}
 
@@ -372,7 +381,7 @@
 
 	.categoryName {
 		position: relative;
-		top: -110%;
+		top: -98%;
 		font-size: x-large;
 		text-shadow: 2px 2px #FF0000;
 		font-weight: bold;
