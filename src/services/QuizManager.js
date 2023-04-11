@@ -1,5 +1,3 @@
-/* eslint-disable no-magic-numbers */
-
 const updateScore = (context) => {
 	const { state: { score, currentQuestion, userAnswer,
 		userInfo, currentCategory }} = context;
@@ -11,9 +9,9 @@ const updateScore = (context) => {
 };
 
 const isChecked = (context) => {
-	const { state: { input: { options }}} = context;
+	const { state: { input: { options }}, config: { optionCount }} = context;
 
-	return options.length !== 3;
+	return options.length !== optionCount;
 };
 
 const ButtonAction = (context) => {

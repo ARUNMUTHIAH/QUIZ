@@ -14,7 +14,7 @@ const SearchBar = (context) => {
 				...prevState,
 				userInfo: prevState.userInfo.filter((user) =>
 					user.name === prevState.searchInput),
-				searchInput: ' ',
+				searchInput: '',
 			})),
 		} }
 		/>

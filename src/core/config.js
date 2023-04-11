@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 const config = {
 	inputData: { question: '', options: [], answer: '' },
+	optionCount: 4,
 	categories: [
 		{
 			name: 'cricket',

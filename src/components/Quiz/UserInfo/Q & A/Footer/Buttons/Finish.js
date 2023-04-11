@@ -9,20 +9,19 @@ const Finish = (context) => {
 		state: { userAnswer, currentQuestion, userInfo }} = context;
 
 	return (
-		<Button { ...{
-			variant: 'contained',
+		<Button { ...{ variant: 'contained',
 			size: 'large',
 			disabled: !userAnswer,
+			className: 'finish',
 			onClick: () => setState((prevState) => ({
 				...prevState,
 				score: QuizManager.updateScore(context),
 				currentQuestion: currentQuestion + 1,
 				isNext:
-					userInfo[prevState.currentCategory].id + 1 === 6
-						? !prevState.isNext
-						: prevState.isNext,
-			})),
-		} }
+				userInfo[prevState.currentCategory].id + 1 === 6
+					? !prevState.isNext
+					: prevState.isNext,
+			})) } }
 		><DoneAllTwoToneIcon/></Button>);
 };
 

@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import { Button } from '@mui/material';
 import QuizManager from '../../../../services/QuizManager';
@@ -15,10 +14,8 @@ const Add = (context) => {
 				...state,
 				userInfo: userInfo.map((category) =>
 					(category.name === dropDownList
-						? {
-							...category,
-							quizData: [...category.quizData, input],
-						}
+						? { ...category,
+							quizData: [...category.quizData, input] }
 						: category)),
 				input: config.inputData,
 			}) }

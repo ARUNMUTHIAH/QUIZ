@@ -241,13 +241,21 @@
 .categoriesList {
 	margin-top: 1%;
 	font-size: 50px;
-
 }
 
+.backToHome {
+	position: relative;
+	left : 10px;
+}
 
 .forward {
 	position: relative;
 	left  : 20px;
+}
+
+.finish {
+	position: relative;
+	left: 20px;
 }
 
 .congratulationScreen {
