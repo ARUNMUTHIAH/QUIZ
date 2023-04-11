@@ -14,6 +14,7 @@ const seed = {
 	isFinish: false,
 	role: '',
 	dropDownList: '',
+	isBack: false,
 };
 
 export default seed;

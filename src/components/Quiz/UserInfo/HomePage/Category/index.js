@@ -6,11 +6,11 @@ import Logo from './Logo';
 import Play from './Play';
 
 const Categories = (context) => {
-	const { config: { categories }} = context;
+	const { state: { userInfo }} = context;
 
 	return (
 		<Box className="container">
-			{ categories.map((category, key) =>
+			{ userInfo.map((category, key) =>
 				<Box key={ key } className="categories">
 					<Image { ...{ ...context, data: category } }/>
 					<Logo { ...context }/>

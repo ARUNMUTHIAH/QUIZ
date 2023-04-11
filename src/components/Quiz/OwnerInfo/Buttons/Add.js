@@ -5,7 +5,7 @@ import QuizManager from '../../../../services/QuizManager';
 
 const Add = (context) => {
 	const { setState, state,
-		state: { categoriesData, input, dropDownList }, config } = context;
+		state: { userInfo, input, dropDownList }, config } = context;
 
 	return (
 		<Button
@@ -13,7 +13,7 @@ const Add = (context) => {
 			variant="contained"
 			onClick={ () => setState({
 				...state,
-				categoriesData: categoriesData.map((category) =>
+				userInfo: userInfo.map((category) =>
 					(category.name === dropDownList
 						? {
 							...category,

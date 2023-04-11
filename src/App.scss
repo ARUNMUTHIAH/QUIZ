@@ -244,9 +244,10 @@
 
 }
 
+
 .forward {
 	position: relative;
-	left: 30px;
+	left  : 20px;
 }
 
 .congratulationScreen {
@@ -281,6 +282,17 @@
 		width: 55%;
 		height: 55px;
 		border-radius: 10px;
+	}
+
+	.backward {
+		position: relative;
+		right: 10px;
+		left : 3px;
+	}
+
+	.forward {
+		position: relative;
+		left : 15px;
 	}
 
 	.banner {
