@@ -165,7 +165,7 @@
 }
 
 .tabs {
-	padding-left: 15%
+	padding-left: 15%;
 }
 
 .menuBar {
@@ -245,12 +245,12 @@
 
 .backToHome {
 	position: relative;
-	left : 10px;
+	left: 10px;
 }
 
 .forward {
 	position: relative;
-	left  : 20px;
+	left: 20px;
 }
 
 .finish {
@@ -265,6 +265,32 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.aboutUs {
+	font-weight: italic;
+	word-spacing: 12px;
+	font-size: 2.5em;
+	text-align: justify;
+	margin: auto;
+	height: 100vh;
+	background-color: rgb(112, 112, 170);
+}
+
+.aboutUsLabel {
+	text-align: center;
+	text-shadow: 2px 2px #FF0000;
+	text-decoration: underline;
+}
+
+.faqs {
+	font-weight: italic;
+	font-size: 2.5em;
+	height: 100vh;
+	text-align: justify;
+	background-color: rgb(112, 112, 170);
+
+}
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -295,12 +321,12 @@
 	.backward {
 		position: relative;
 		right: 10px;
-		left : 3px;
+		left: 3px;
 	}
 
 	.forward {
 		position: relative;
-		left : 15px;
+		left: 15px;
 	}
 
 	.banner {

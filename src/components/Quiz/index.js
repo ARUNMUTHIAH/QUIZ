@@ -6,6 +6,7 @@ const Quiz = (context) => {
 	const { state: { isFinish }} = context;
 
 	return isFinish
+
 		? <FinalScreen { ...context }/>
 		: <FrontScreen { ...context }/>;
 };

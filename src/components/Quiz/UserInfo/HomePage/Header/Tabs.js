@@ -1,37 +1,37 @@
 /* eslint-disable max-lines-per-function */
 import React from 'react';
-import { Box, Tab } from '@mui/material';
-import { TabContext, TabList } from '@mui/lab';
+import { Box, Button } from '@mui/material';
 import InfoTwoToneIcon from '@mui/icons-material/InfoTwoTone';
 import QuizTwoToneIcon from '@mui/icons-material/QuizTwoTone';
 import AddHomeWorkTwoToneIcon from '@mui/icons-material/AddHomeWorkTwoTone';
-
-const style = () =>
-	({ fontSize: 'x-large',
-		fontWeight: 'bold' });
+import { Link } from 'react-router-dom';
 
 const Tabs = () =>
 	<Box className="tabs">
-		<TabContext
-			value=""
-		>
-			<TabList>
-				<AddHomeWorkTwoToneIcon sx={ { marginTop: '13px' } }/>
-				<Tab
-					sx={ style() }
-					label="Home"
-				/>
-				<InfoTwoToneIcon sx={ { marginTop: '13px' } }/>
-				<Tab
-					sx={ style() }
-					label="About Us"
-				/> 	<QuizTwoToneIcon sx={ { marginTop: '13px' } }/>
-				<Tab
-					sx={ style() }
-					label="FAQs"
-				/>
-			</TabList>
-		</TabContext>
+		<Link to="/HomePage">
+			<Button { ...{
+				size: 'large',
+				color: 'secondary',
+				startIcon: <AddHomeWorkTwoToneIcon/>,
+			} }
+			>Home</Button>
+		</Link>
+		<Link to="/AboutUs">
+			<Button { ...{
+				size: 'large',
+				color: 'secondary',
+				startIcon: <InfoTwoToneIcon/>,
+			} }
+			>AboutUs</Button>
+		</Link>
+		<Link to="/FAQs">
+			<Button { ...{
+				size: 'large',
+				color: 'secondary',
+				startIcon: <QuizTwoToneIcon/>,
+			} }
+			>FAQs</Button>
+		</Link>
 	</Box>;
 
 export default Tabs;
