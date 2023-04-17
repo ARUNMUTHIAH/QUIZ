@@ -13,7 +13,7 @@ const SearchBar = (context) => {
 			onClick: () => setState((prevState) => ({
 				...prevState,
 				userInfo: prevState.userInfo.filter((user) =>
-					user.name === prevState.searchInput),
+					user.name === prevState.searchInput.toLowerCase()),
 				searchInput: '',
 			})),
 		} }

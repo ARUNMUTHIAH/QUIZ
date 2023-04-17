@@ -8,19 +8,19 @@ const Add = (context) => {
 
 	return (
 		<Button
+			className="add"
 			disabled={ QuizManager.isChecked(context) }
 			variant="contained"
+			size="large"
 			onClick={ () => setState({
 				...state,
-				userInfo: userInfo.map((category) =>
-					(category.name === dropDownList
-						? { ...category,
-							quizData: [...category.quizData, input] }
-						: category)),
+				userInfo: userInfo.map((user) =>
+					(user.name === dropDownList
+						? { ...user, quizData: [...user.quizData, input] }
+						: user)),
 				input: config.inputData,
 			}) }
-		>
-			+
+		> ADD
 		</Button>);
 };
 

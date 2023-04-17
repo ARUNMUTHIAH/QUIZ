@@ -7,12 +7,15 @@ const OptionAdd = (context) => {
 
 	return (
 		<Button
+			className="optionAdd"
+			variant="contained"
+			size="large"
 			onClick={ () => setState({
 				...state,
 				input: { ...input, options: [...options, option] },
 				option: config.inputData.options,
 			}) }
-		>Add
+		> +
 		</Button>);
 }
 ;

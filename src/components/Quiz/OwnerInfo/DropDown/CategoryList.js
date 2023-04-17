@@ -7,7 +7,7 @@ const CategoryList = (context) => {
 	return (
 		<Box className="categoriesList">
 			<select
-				fontSize="100px"
+				style={ { height: '50px', width: '130px' } }
 				onChange={ ({ target: { value }}) =>
 					setState({
 						...state,
