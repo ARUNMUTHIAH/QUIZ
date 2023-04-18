@@ -1,5 +1,11 @@
 import React from 'react';
-import Components from './Components';
+import PlayAction from '../HomePage/Category/PlayAction';
+import Inputs from '../../OwnerInfo';
+
+const Components = {
+	start: PlayAction,
+	create: Inputs,
+};
 
 const SelectedComponents = (context) => {
 	const { state: { role }} = context;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import Action from './Actions';
-import Buttons from './Buttons';
+import SelectedComponents from './SelectedComponents';
 
 const FrontScreen = (context) => {
 	const { state: { role }} = context;
@@ -10,7 +10,7 @@ const FrontScreen = (context) => {
 		<Box>
 			{role === ''
 				? <Action { ...context }/>
-				: <Buttons { ...context }/>}
+				: <SelectedComponents { ...context }/>}
 		</Box>
 	);
 };

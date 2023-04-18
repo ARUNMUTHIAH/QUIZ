@@ -7,8 +7,8 @@ const Create = (context) => {
 	return (
 		<Box
 			className="ownerButton"
-			onClick={ () => setState((state) => ({
-				...state,
+			onClick={ () => setState((prevState) => ({
+				...prevState,
 				role: 'create',
 			})) }
 		>
