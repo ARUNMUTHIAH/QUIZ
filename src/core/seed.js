@@ -15,6 +15,7 @@ const seed = {
 	role: '',
 	dropDownList: '',
 	searchInput: '',
+	signUp: false,
 };
 
 export default seed;

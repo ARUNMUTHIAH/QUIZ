@@ -106,12 +106,26 @@
 	left: 2%;
 }
 
-.ownerInfo {
-	background-image: url('https://media.istockphoto.com/id/1348235111/photo/innovation-and-new-ideas-lightbulb-concept-with-question-mark.jpg?b=1&s=170667a&w=0&k=20&c=E0zHeq4qiYrXWOfgrYvu57flIK1_26MMlDrb_LusCKg=');
-	height: 100vh;
-	width: 100vw;
-	background-repeat: no-repeat;
-	background-size: cover;
+.signUpDetails {
+	margin-top: 6%;
+}
+
+.emailLabel {
+	position: relative;
+	font-size: 2em;
+	margin-left: -30%;
+	top: 40px;
+}
+
+.passwordLabel {
+	position: relative;
+	font-size: 2em;
+	margin-left: -26%;
+	top: 40px;
+}
+
+.signUpLabel {
+font-size: 3em;
 }
 
 .userButton {
